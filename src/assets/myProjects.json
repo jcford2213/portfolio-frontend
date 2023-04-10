@@ -1,0 +1,11 @@
+{
+  "projects": [
+    {
+      "name": "Nasa's Astronomy Picture of the Day",
+      "link": "https://www.nasaastronomypictures.art",
+      "description": "A remake of Nasa's APOD site using Nasa's APOD open-Api. Built using Vue.js and Node.js/Express.js.",
+      "snapshot": "project-snaps/APOD-Snap.jpg",
+      "mobileSnapshot": "project-snaps/APOD-Mobile-Snap.jpg"
+    }
+  ]
+}
