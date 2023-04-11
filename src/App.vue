@@ -6,13 +6,23 @@ export default {
   components: {
     headerComponent,
     footerComponent
+  },
+  data() {
+    return {
+      routerChanged: false
+    }
+  },
+  watch: {
+    $route() {
+      this.routerChanged = !this.routerChanged;
+    }
   }
 }
 </script>
 
 <template>
   <div id="app-wrapper">
-    <headerComponent />
+    <headerComponent :routerChanged="routerChanged"/>
     <router-view />
     <footerComponent />
   </div>

@@ -4,6 +4,17 @@ export default {
     return {
       showNav: false
     }
+  },
+  props: {
+    routerChanged: Boolean
+  },
+  watch: {
+    routerChanged() {
+      if (!this.showNav) {
+        return;
+      }
+      this.showNav = !this.showNav;
+    }
   }
 }
 </script>

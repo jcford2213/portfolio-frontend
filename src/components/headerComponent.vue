@@ -4,6 +4,9 @@ import navComponent from './navComponent.vue';
 export default {
   components: {
     navComponent
+  },
+  props: {
+    routerChanged: Boolean
   }
 }
 </script>
@@ -13,7 +16,7 @@ export default {
     <div id="personal-logo">
       <router-link to="/"><img src="/logos/my-logo.svg" alt="JC Logo" height="50" width="50"></router-link>
     </div>
-    <navComponent />
+    <navComponent :routerChanged="routerChanged"/>
   </header>
 </template>
 
