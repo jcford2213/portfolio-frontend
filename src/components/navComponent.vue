@@ -39,7 +39,7 @@ export default {
         <font-awesome-icon id="fa-minus" icon="fa-minus"/>
       </font-awesome-layers>
       <font-awesome-icon id="fa-times" class="fa-2x" icon="fa-solid fa-times" v-if="showNav"/>
-      </a>
+    </a>
   </nav>
 </template>
 

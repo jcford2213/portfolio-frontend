@@ -15,23 +15,23 @@ export default {
       </p>
       <ul class="paragraph">
         <li class="link-wrapper">
-          <div class="social-button">
+          <a href="https://github.com/jcford2213" target="_blank" class="social-button">
             <font-awesome-layers class="fa-2x">
               <font-awesome-icon icon="fa-circle" class="fa-stack-1x fa-icon-background" />
               <font-awesome-icon icon="fa-brands fa-github" class="fa-stack-1x fa-icon-foreground" />
             </font-awesome-layers>
-            <a href="https://github.com/jcford2213" target="_blank">GitHub</a>
-          </div>
+            <p class="paragraph">GitHub</p>
+          </a>
           
         </li>
         <li class="link-wrapper">
-          <div class="social-button">
+          <a href="https://www.linkedin.com/in/jackson-crantford-364abb91/" target="_blank" class="social-button">
             <font-awesome-layers class="fa-2x">
               <font-awesome-icon icon="fa-square" class="fa-stack-1x fa-icon-background" />
               <font-awesome-icon icon="fa-brands fa-linkedin" class="fa-stack-1x fa-icon-foreground" />
             </font-awesome-layers>
-            <a href="https://www.linkedin.com/in/jackson-crantford-364abb91/" target="_blank">Linkedin</a>
-          </div>
+            <p>Linkedin</p>
+          </a>
         </li>
       </ul>
     </section>
