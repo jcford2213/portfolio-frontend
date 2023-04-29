@@ -59,4 +59,15 @@ export default {
   height: auto;
   aspect-ratio: attr(width) / attr(height);
 }
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000000;
+  opacity: 0.7;
+}
+
+
 </style>

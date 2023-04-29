@@ -13,12 +13,29 @@ export default {
       <p class="paragraph" id="short-info">
         I've been a web developer for nearly 2 years. I have a passion for creating and problem solving. I enjoy putting those passions to work building responsive web applications.
       </p>
-      <router-link id=contact-me class="nav-button" to="/contact">Contact Me</router-link>
+      <ul class="paragraph">
+        <li class="link-wrapper">
+          <div class="social-button">
+            <font-awesome-layers class="fa-2x">
+              <font-awesome-icon icon="fa-circle" class="fa-stack-1x fa-icon-background" />
+              <font-awesome-icon icon="fa-brands fa-github" class="fa-stack-1x fa-icon-foreground" />
+            </font-awesome-layers>
+            <a href="https://github.com/jcford2213" target="_blank">GitHub</a>
+          </div>
+          
+        </li>
+        <li class="link-wrapper">
+          <div class="social-button">
+            <font-awesome-layers class="fa-2x">
+              <font-awesome-icon icon="fa-square" class="fa-stack-1x fa-icon-background" />
+              <font-awesome-icon icon="fa-brands fa-linkedin" class="fa-stack-1x fa-icon-foreground" />
+            </font-awesome-layers>
+            <a href="https://www.linkedin.com/in/jackson-crantford-364abb91/" target="_blank">Linkedin</a>
+          </div>
+        </li>
+      </ul>
     </section>
     <section id="about-skills">
-      <p class="paragraph">
-        Some tech I use...
-      </p>
       <skillsComponent />    
     </section>
   </div>
@@ -30,16 +47,33 @@ export default {
   display: flex;
   flex-direction: column;
   row-gap: 3rem;
-  margin-block: 3.125rem;
 }
 #about-header {
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  row-gap: 1rem;
+  row-gap: 3rem;
   font-size: 1.2rem;
+  padding-top: 3rem;
+  padding-bottom: 14rem;
+  background-color: #028090;
 }
-#about-skills > p {
-  font-size: 1.2rem;
+#about-header > p {
+  padding-inline: 2rem;
+}
+#about-header > ul {
+  width: 100%;
+  padding-inline: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 1rem;
+}
+#about-skills {
+  margin-top: -14rem;
+}
+.logo-button > a{
+  color: #028090;
 }
 </style>

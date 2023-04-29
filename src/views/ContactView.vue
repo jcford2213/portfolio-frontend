@@ -44,6 +44,7 @@ export default {
   justify-content: center;
   align-items: start;
   row-gap: 3rem;
+  margin-top: 4rem;
 }
 #email-form {
   display: flex;

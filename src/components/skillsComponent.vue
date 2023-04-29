@@ -55,7 +55,7 @@ export default {
       </section>
       <section class="skill-section">
         <h3 class="headline">
-          Developer Tools
+          Dev Tools
         </h3>
         <ul>
           <li v-for="skill in devSkills">
@@ -74,14 +74,17 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-inline: 10%;
+  background-color: #404040;
 }
 .skill-section {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
-  margin: 1rem 4rem;
-  
+  margin-bottom: -0.125rem;
+  padding-block: 1rem;
+  border: 0.125rem solid white;
 }
 .skill-section > ul > li {
   display: flex;

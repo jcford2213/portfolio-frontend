@@ -10,7 +10,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100svh;
+  height: calc(100svh - 5.25rem);
 }
 #hero-wrapper > h1 {
   text-align: center;

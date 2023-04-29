@@ -6,14 +6,18 @@ export default {
     }
   },
   props: {
-    routerChanged: Boolean
+    logoLinkClicked: Number
   },
   watch: {
-    routerChanged() {
-      if (!this.showNav) {
-        return;
+    logoLinkClicked() {
+      if (this.showNav) {
+        this.showNav = false;
       }
-      this.showNav = !this.showNav;
+    }
+  },
+  methods: {
+    hideNav() {
+      this.showNav = false;
     }
   }
 }
@@ -22,17 +26,20 @@ export default {
 <template>
   <nav id="nav-wrapper">
     <ul id="nav-ul" class="paragraph" v-if="showNav">
-      <li>
-        <a class="nav-button" href="/Jackson_Crantford_Resume.pdf" target="_blank" ref="noopener noreferrer">Resume</a>
+      <li class="nav-button" @click="hideNav">
+        <a href="/Jackson_Crantford_Resume.pdf" target="_blank" ref="noopener noreferrer">Resume</a>
       </li>
-      <li>
-        <router-link class="nav-button" to="/contact">Contact</router-link>
+      <li class="nav-button" @click="hideNav">
+        <router-link to="/contact">Contact</router-link>
       </li>
     </ul>
     <a href="javascript:void(0);" @click="showNav = !showNav">
-      <i v-if="!showNav" class="fa fa-bars fa-2x"></i>
-      <i v-if="showNav" class="fa fa-times fa-2x"></i>
-    </a>
+      <font-awesome-layers class="fa-2x" v-if="!showNav">
+        <font-awesome-icon id="fa-bars" icon="fa-solid fa-bars" />
+        <font-awesome-icon id="fa-minus" icon="fa-minus"/>
+      </font-awesome-layers>
+      <font-awesome-icon id="fa-times" class="fa-2x" icon="fa-solid fa-times" v-if="showNav"/>
+      </a>
   </nav>
 </template>
 
@@ -42,6 +49,7 @@ export default {
   position: relative;
   grid-template-columns: 1fr auto;
   align-items: center;
+  padding-right: .75rem;
 }
 #nav-ul {
   position: absolute;
@@ -56,5 +64,15 @@ export default {
 }
 #nav-wrapper > a {
   justify-self: end;
+}
+#fa-bars {
+  color: #028090;
+}
+#fa-minus {
+  color: #1DB954;
+}
+#fa-times {
+  transform: scale(1.2);
+  color:  #028090;
 }
 </style>
