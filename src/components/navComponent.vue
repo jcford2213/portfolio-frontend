@@ -27,7 +27,7 @@ export default {
   <nav id="nav-wrapper">
     <ul id="nav-ul" class="paragraph" v-if="showNav">
       <li class="nav-button" @click="hideNav">
-        <a href="/Jackson_Crantford_Resume.pdf" target="_blank" ref="noopener noreferrer">Resume</a>
+        <a href="/JacksonCrantford_Resume.pdf" target="_blank" ref="noopener noreferrer">Resume</a>
       </li>
       <li class="nav-button" @click="hideNav">
         <router-link to="/contact">Contact</router-link>
