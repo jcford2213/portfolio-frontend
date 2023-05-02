@@ -6,13 +6,13 @@
   padding: 0;
   margin: 0;
 }
-
+::selection {
+  background: #1DB954;
+}
 
 #app-body {
   background-color: #262626;
   color: #ffffff;
-  margin-block: 1rem;
-  margin-inline: 1rem;
   min-height: 100svh;
   max-width: 800px;
   /* min-height: 100vh; */
@@ -39,6 +39,7 @@ ul {
   margin: 0;
 }
 
+/* Text Styles */
 .headline {
   font-family: 'Archivo', sans-serif;
 }
@@ -47,7 +48,6 @@ ul {
 }
 
 /* Nav Buttons */
-
 .nav-button {
   font-family: 'Roboto', sans-serif;
   border: 0.2rem solid #028090;
@@ -65,8 +65,7 @@ ul {
   box-shadow: 0 0 0 0.125rem #1DB954;
 }
 
-/* Social Media Links */
-
+/* Social Media Buttons */
 .social-button {
   display: flex;
   flex-direction: row;

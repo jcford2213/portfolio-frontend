@@ -6,8 +6,8 @@ import router from './router/router';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon, FontAwesomeLayers } from '@fortawesome/vue-fontawesome';
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
-import { faBars, faTimes, faCircle, faSquare, faMinus } from '@fortawesome/free-solid-svg-icons'
-library.add(faLinkedin, faGithub, faBars, faTimes, faCircle, faSquare, faMinus );
+import { faBars, faTimes, faCircle, faSquare } from '@fortawesome/free-solid-svg-icons'
+library.add(faLinkedin, faGithub, faBars, faTimes, faCircle, faSquare );
 
 
 const app = createApp(App)

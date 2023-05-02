@@ -1,8 +1,8 @@
 <script>
 
-import HeroView from './HeroView.vue';
-import AboutView from './AboutView.vue';
-import ProjectsView from './ProjectsView.vue';
+import HeroView from '../components/heroComponent.vue';
+import AboutView from '../components/aboutComponent.vue';
+import ProjectsView from '../components/projectsComponent.vue';
 
 export default {
   components: {

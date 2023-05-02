@@ -3,10 +3,14 @@
     <section id="social-links">
       <ul>
         <li class="link-wrapper">
-          <a href="https://github.com/jcford2213" target="_blank"><i class="fa-brands fa-github fa-2x"></i></a>
+          <a href="https://github.com/jcford2213" target="_blank">
+            <font-awesome-icon icon="fa-brands fa-github" class="fa-2x fa-icon-foreground" />
+          </a>
         </li>
         <li class="link-wrapper">
-          <a href="https://www.linkedin.com/in/jackson-crantford-364abb91/" target="_blank"><i class="fa-brands fa-linkedin fa-2x"></i></a>
+          <a href="https://www.linkedin.com/in/jackson-crantford-364abb91/" target="_blank">
+            <font-awesome-icon icon="fa-brands fa-linkedin" class="fa-2x fa-icon-foreground" />
+          </a>
         </li>
       </ul>
     </section>
@@ -20,7 +24,7 @@
         </li>
     </ul>
     </nav>
-    <p class="paragraph">Designed and built by me. &copy Jackson Crantford 2023.</p>
+    <p class="paragraph">Designed and built by me. &copy 2023.</p>
   </div>
 </template>
 
@@ -30,8 +34,9 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: #028090;
   row-gap: 2rem;
-  margin: 3.125rem 1rem 1rem 1rem;
+  padding: 3.125rem 1rem 1rem 1rem;
 }
 #social-links > ul {
   display: flex;

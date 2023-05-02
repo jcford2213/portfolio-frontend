@@ -22,7 +22,7 @@ export default {
           </p>
         </a>
       </figure>
-      <p class="paragraph">
+      <p class="paragraph" id="description">
         {{ project.description }}
       </p>
     </section>
@@ -68,6 +68,8 @@ export default {
   background-color: #000000;
   opacity: 0.7;
 }
-
+#description {
+  padding-inline: 2rem;
+}
 
 </style>

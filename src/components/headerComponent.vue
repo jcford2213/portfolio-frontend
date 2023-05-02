@@ -33,6 +33,7 @@ header {
   grid-template-columns: auto 1fr;
   justify-content: space-between;
   align-items: center;
+  margin-top: 1rem;
 }
 #logo {
   padding: 0.75rem;

@@ -34,10 +34,7 @@ export default {
       </li>
     </ul>
     <a href="javascript:void(0);" @click="showNav = !showNav">
-      <font-awesome-layers class="fa-2x" v-if="!showNav">
-        <font-awesome-icon id="fa-bars" icon="fa-solid fa-bars" />
-        <font-awesome-icon id="fa-minus" icon="fa-minus"/>
-      </font-awesome-layers>
+      <font-awesome-icon id="fa-bars" icon="fa-solid fa-bars" class="fa-2x" v-if="!showNav" />        
       <font-awesome-icon id="fa-times" class="fa-2x" icon="fa-solid fa-times" v-if="showNav"/>
     </a>
   </nav>
@@ -67,9 +64,6 @@ export default {
 }
 #fa-bars {
   color: #028090;
-}
-#fa-minus {
-  color: #1DB954;
 }
 #fa-times {
   transform: scale(1.2);

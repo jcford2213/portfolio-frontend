@@ -10,7 +10,7 @@ export default {
 <template>
   <div id="about-wrapper">
     <section id="about-header">
-      <p class="paragraph" id="short-info">
+      <p class="paragraph">
         I've been a web developer for nearly 2 years. I have a passion for creating and problem solving. I enjoy putting those passions to work building responsive web applications.
       </p>
       <ul class="paragraph">
@@ -47,6 +47,7 @@ export default {
   display: flex;
   flex-direction: column;
   row-gap: 3rem;
+
 }
 #about-header {
   width: 100%;
@@ -55,11 +56,11 @@ export default {
   align-items: center;
   row-gap: 3rem;
   font-size: 1.2rem;
-  padding-top: 3rem;
   padding-bottom: 14rem;
   background-color: #028090;
 }
 #about-header > p {
+  padding-top: 3rem;
   padding-inline: 2rem;
 }
 #about-header > ul {
