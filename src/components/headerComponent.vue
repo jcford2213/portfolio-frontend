@@ -39,4 +39,13 @@ header {
   padding: 0.75rem;
 }
 
+@media screen and (min-width: 800px) {
+  header {
+   max-width: 1700px;
+  margin-inline: 10%;
+  }
+  #logo {
+    margin-left: 2rem;
+  }
+}
 </style>

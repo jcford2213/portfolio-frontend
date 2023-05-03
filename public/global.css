@@ -14,7 +14,7 @@
   background-color: #262626;
   color: #ffffff;
   min-height: 100svh;
-  max-width: 800px;
+  min-width: 310px;
   /* min-height: 100vh; */
 }
 

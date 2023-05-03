@@ -75,7 +75,7 @@ export default {
   flex-direction: column;
   align-items: center;
   margin-inline: 10%;
-  background-color: #404040;
+  font-size: 1.375rem;
 }
 .skill-section {
   display: flex;
@@ -83,15 +83,27 @@ export default {
   align-items: center;
   width: 100%;
   margin-bottom: -0.125rem;
-  padding-block: 1rem;
+  padding-block: 2rem;
   border: 0.125rem solid white;
+  max-width: 700px; 
+  background-color: #404040;
 }
-.skill-section > ul > li {
+li {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   margin-top: 1rem;
   column-gap: 1rem;
+}
+@media screen and (min-width: 800px) {
+  #skills-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: fit-content;
+  }
+  .skill-section {
+    height: 100%;
+  }
 }
 </style>

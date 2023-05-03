@@ -62,19 +62,27 @@ export default {
 #about-header > p {
   padding-top: 3rem;
   padding-inline: 2rem;
+  max-width: 50rem;
+  font-size: 1.25rem;
 }
 #about-header > ul {
   width: 100%;
   padding-inline: 2rem;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-evenly;
   font-size: 1rem;
+  max-width: 50rem;
+
 }
 #about-skills {
   margin-top: -14rem;
 }
 .logo-button > a{
   color: #028090;
+}
+
+@media screen and (min-width: 800px) {
+  
 }
 </style>

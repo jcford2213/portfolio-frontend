@@ -2,7 +2,8 @@
 export default {
   data() {
     return {
-      showNav: false
+      showNav: false,
+      mobileView: window.innerWidth < 800 ? true : false
     }
   },
   props: {
@@ -13,19 +14,31 @@ export default {
       if (this.showNav) {
         this.showNav = false;
       }
+    },
+    innerWidth(width) {
+      mobileView = width < 800 ? true : false;
     }
   },
   methods: {
     hideNav() {
       this.showNav = false;
     }
+  },
+  mounted() {
+    window.addEventListener('resize', () => {
+      this.mobileView = window.innerWidth < 800 ? true : false;
+    })
   }
 }
 </script>
 
 <template>
   <nav id="nav-wrapper">
-    <ul id="nav-ul" class="paragraph" v-if="showNav">
+    <a href="javascript:void(0);" @click="showNav = !showNav" v-if="mobileView">
+      <font-awesome-icon id="fa-bars" icon="fa-solid fa-bars" class="fa-2x" v-if="!showNav" />        
+      <font-awesome-icon id="fa-times" class="fa-2x" icon="fa-solid fa-times" v-if="showNav"/>
+    </a>
+    <ul id="nav-ul" class="paragraph" v-if="showNav || !mobileView">
       <li class="nav-button" @click="hideNav">
         <a href="/JacksonCrantford_Resume.pdf" target="_blank" ref="noopener noreferrer">Resume</a>
       </li>
@@ -33,10 +46,6 @@ export default {
         <router-link to="/contact">Contact</router-link>
       </li>
     </ul>
-    <a href="javascript:void(0);" @click="showNav = !showNav">
-      <font-awesome-icon id="fa-bars" icon="fa-solid fa-bars" class="fa-2x" v-if="!showNav" />        
-      <font-awesome-icon id="fa-times" class="fa-2x" icon="fa-solid fa-times" v-if="showNav"/>
-    </a>
   </nav>
 </template>
 
@@ -57,7 +66,6 @@ export default {
   flex-direction: column;
   align-items: center;
   row-gap: 1.5rem;
-  /* height: 0; */
 }
 #nav-wrapper > a {
   justify-self: end;
@@ -68,5 +76,16 @@ export default {
 #fa-times {
   transform: scale(1.2);
   color:  #028090;
+}
+
+@media screen and (min-width: 800px) {
+  #nav-ul {
+    position: static;
+    flex-direction: row;
+    justify-content: end;
+    margin-right: 2rem;
+    column-gap: 2rem;
+    font-size: 1.25rem;
+  }
 }
 </style>
