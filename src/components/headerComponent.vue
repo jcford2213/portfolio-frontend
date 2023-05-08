@@ -9,19 +9,14 @@ export default {
     return {
       logoLinkClicked: 0
     }
-  },
-  methods: {
-    testFunction() {
-      console.log('testFunction ran');
-    }
   }
 }
 </script>
 
 <template>
   <header>
-    <router-link @click="logoLinkClicked = logoLinkClicked > 0 ? 0 : 1" id="logo" to="/">
-      <img src="/logos/my-logo.svg" alt="JC Logo" height="60" width="60">
+    <router-link @click="logoLinkClicked = logoLinkClicked > 0 ? 0 : 1" id="header-logo" to="/">
+      <img src="/logos/JC-logo-colored.svg" alt="JC Logo" height="60" width="60">
     </router-link>
     <navComponent :logoLinkClicked="logoLinkClicked"/>
   </header>
@@ -41,10 +36,10 @@ header {
 
 @media screen and (min-width: 800px) {
   header {
-   max-width: 1700px;
-  margin-inline: 10%;
+    max-width: 1700px;
+    margin-inline: 10%;
   }
-  #logo {
+  #header-logo {
     margin-left: 2rem;
   }
 }

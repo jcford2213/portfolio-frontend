@@ -81,8 +81,4 @@ export default {
 .logo-button > a{
   color: #028090;
 }
-
-@media screen and (min-width: 800px) {
-  
-}
 </style>

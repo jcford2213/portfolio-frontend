@@ -33,7 +33,9 @@ export default {
 
 <template>
   <div id="contact-wrapper">
-    <h2 class="headline">Get in touch! Email me at:<br><br>jackson-crantford@outlook.com</h2>
+    <h2 class="headline">Get in touch!</h2>
+    <h2 class="headline">Email me at:</h2>
+    <a href="mailto: jackson-crantford@outlook.com" class="paragraph">jackson-crantford@outlook.com</a>
   </div>
 </template>
 
@@ -43,8 +45,15 @@ export default {
   flex-direction: column;
   justify-content: center;
   align-items: start;
-  row-gap: 3rem;
+  row-gap: 1rem;
   margin-top: 4rem;
+  margin-inline: auto;
+}
+a {
+  font-size: 1.25rem;;
+}
+a:hover {
+  color: #1DB954;
 }
 #email-form {
   display: flex;

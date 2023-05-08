@@ -28,7 +28,7 @@ export default {
 <template>
   <div id="skills-wrapper">
       <section class="skill-section">
-        <h3 class="headline">
+        <h3 class="headline category-headline">
           Frontend
         </h3>
         <ul>
@@ -41,7 +41,7 @@ export default {
         </ul>
       </section>
       <section class="skill-section">
-        <h3 class="headline">
+        <h3 class="headline category-headline">
           Backend
         </h3>
         <ul>
@@ -54,7 +54,7 @@ export default {
         </ul>
       </section>
       <section class="skill-section">
-        <h3 class="headline">
+        <h3 class="headline category-headline">
           Dev Tools
         </h3>
         <ul>
@@ -75,6 +75,8 @@ export default {
   flex-direction: column;
   align-items: center;
   margin-inline: 10%;
+}
+#category-headline {
   font-size: 1.375rem;
 }
 .skill-section {

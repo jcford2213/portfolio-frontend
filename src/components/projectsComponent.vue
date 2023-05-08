@@ -17,9 +17,9 @@ export default {
         <img id="project-image" :src="project.snapshot" alt="Project Screenshot">
         <div class="overlay"></div>
         <a v-bind:href="project.link" target="_blank">
-          <p class="project-name headline">
+          <figcaption class="project-name headline">
             {{ project.name }}
-          </p>
+          </figcaption>
         </a>
       </figure>
       <p class="paragraph" id="description">
@@ -36,6 +36,7 @@ export default {
   align-items: center;
   row-gap: 1rem;
   margin-block: 3.125rem;
+  margin-inline: 10%;
 }
 .project-banner {
   display: flex;
@@ -45,6 +46,8 @@ export default {
   position: relative;
   background-color: #000000;
   margin-block: 1rem;
+  margin-inline: auto;
+  max-width: 800px;
 }
 .project-banner > a {
   position: absolute;
@@ -72,4 +75,6 @@ export default {
   padding-inline: 2rem;
 }
 
+@media screen and (min-width: 800px) {
+}
 </style>

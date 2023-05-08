@@ -1,5 +1,6 @@
 <template>
   <div id="footer-wrapper">
+    <img src="/logos/JC-logo-white.svg" alt="JC Logo" height="60" width="60">  
     <section id="social-links">
       <ul>
         <li class="link-wrapper">
@@ -35,7 +36,7 @@
   justify-content: center;
   align-items: center;
   background-color: #028090;
-  row-gap: 2rem;
+  row-gap: 1.25rem;
   padding: 3.125rem 1rem 1rem 1rem;
 }
 #social-links > ul {
@@ -47,15 +48,19 @@
   font-size: 0.8rem;
 }
 .link-wrapper {
-  padding: 0.125rem
+  padding: 0.125rem;
 }
 #footer-nav > ul {
   display: flex;
   flex-direction: row;
   column-gap: 1rem;
-  font-size: 0.8rem;
 }
-#footer-nav > ul > li {
-  padding: 0.125rem
+#footer-nav ul li {
+  padding: 0.125rem;
+}
+@media screen and (min-width: 800px) {
+  a:hover {
+    color: #1DB954;
+  }
 }
 </style>
