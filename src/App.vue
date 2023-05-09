@@ -19,7 +19,7 @@ export default {
   <div id="app-wrapper">
     <headerComponent :current-route="currentRoute"/>
     <router-view />
-    <footerComponent />
+    <footerComponent :current-route="currentRoute"/>
   </div>
 </template>
 

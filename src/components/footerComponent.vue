@@ -1,6 +1,23 @@
+<script>
+export default {
+  props: {
+    currentRoute: String
+  }
+}
+</script>
+
 <template>
   <div id="footer-wrapper">
-    <img src="/logos/JC-logo-white.svg" alt="JC Logo" height="60" width="60">  
+    <!-- Render <a> if currentRoute is Home page
+      So home page can relaod when user clicks logo
+    Otherwise render <router-link> -->
+    <a v-if="currentRoute === 'Home'" @click="logoLinkClicked = logoLinkClicked > 0 ? 0 : 1" id="footer-logo" href="/">
+     <img src="/logos/JC-logo-white.svg" alt="JC Logo" height="60" width="60">  
+    </a>
+    <router-link v-else @click="logoLinkClicked = logoLinkClicked > 0 ? 0 : 1" id="footer-logo" to="/">
+     <img src="/logos/JC-logo-white.svg" alt="JC Logo" height="60" width="60">  
+    </router-link>
+    
     <section id="social-links">
       <ul>
         <li class="link-wrapper">
