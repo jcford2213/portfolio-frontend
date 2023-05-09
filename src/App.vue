@@ -7,13 +7,17 @@ export default {
     headerComponent,
     footerComponent
   },
-  
+  computed: {
+    currentRoute() {
+      return this.$route.name;
+    }
+  }
 }
 </script>
 
 <template>
   <div id="app-wrapper">
-    <headerComponent />
+    <headerComponent :current-route="currentRoute"/>
     <router-view />
     <footerComponent />
   </div>

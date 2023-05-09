@@ -11,20 +11,23 @@ export default {
 
 <template>
   <div id="projects-wrapper">
-    <h3 class="headline">My Projects</h3>
+    <h3 class="headline">An Example of My Work</h3>
     <section v-for="project in projects">
       <figure class="project-banner">
         <img id="project-image" :src="project.snapshot" alt="Project Screenshot">
-        <div class="overlay"></div>
-        <a v-bind:href="project.link" target="_blank">
-          <figcaption class="project-name headline">
-            {{ project.name }}
-          </figcaption>
-        </a>
+        <div class="overlay"></div>        
+        <figcaption class="project-name headline">
+          {{ project.name }}
+        </figcaption>
       </figure>
-      <p class="paragraph" id="description">
-        {{ project.description }}
-      </p>
+      <div v-if="false">
+        <p class="paragraph" id="description">
+          {{ project.description }}
+        </p>
+        <button class="nav-button">
+          <a v-bind:href="project.link" target="_blank">Visit Site ></a>
+        </button>
+      </div>
     </section>
   </div>
 </template>
@@ -49,7 +52,7 @@ export default {
   margin-inline: auto;
   max-width: 800px;
 }
-.project-banner > a {
+.project-banner > figcaption {
   position: absolute;
 }
 .project-name {

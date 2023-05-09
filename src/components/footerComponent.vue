@@ -18,7 +18,7 @@
     <nav id="footer-nav">
       <ul class="paragraph">
         <li>
-          <a href="/Jackson_Crantford_Resume.pdf" target="_blank" ref="noopener noreferrer">Resume</a>
+          <a href="/JacksonCrantford_Resume.pdf" target="_blank" ref="noopener noreferrer">Resume</a>
         </li>
         <li>
           <router-link to="/contact">Contact</router-link>
