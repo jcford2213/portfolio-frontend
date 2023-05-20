@@ -1,10 +1,9 @@
 {
   "projects": [
     {
-      "name": "Nasa APOD API Website",
       "link": "https://www.nasaastronomypictures.art",
-      "description": "A remake of Nasa's APOD site using Nasa's APOD OpenApi. Built using Vue.js and Node.js/Express.js.",
-      "snapshot": "project-snaps/APOD-Snap.jpg",
+      "description": "A Nasa APOD website build using Nasa's APOD OpenApi, Vue.js, and Node.js/Express.js.",
+      "snapshot": "project-images/APOD-Project-Image.jpg",
       "mobileSnapshot": "project-snaps/APOD-Mobile-Snap.jpg"
     }
   ]
