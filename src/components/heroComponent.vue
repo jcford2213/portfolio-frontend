@@ -9,6 +9,9 @@ export default {
   },
   mounted() {
     window.addEventListener('scroll', this.pauseChevronBounce);
+  },
+  unmounted() {
+    window.removeEventListener('scroll', this.pauseChevronBounce);
   }
 }
 </script>
