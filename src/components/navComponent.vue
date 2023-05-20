@@ -35,8 +35,8 @@ export default {
 <template>
   <nav id="nav-wrapper">
     <a href="javascript:void(0);" @click="showNav = !showNav" v-if="mobileView">
-      <font-awesome-icon id="fa-bars" icon="fa-solid fa-bars" class="fa-2x" v-if="!showNav" />        
-      <font-awesome-icon id="fa-times" class="fa-2x" icon="fa-solid fa-times" v-if="showNav"/>
+      <font-awesome-icon id="fa-bars" icon="fa-bars" class="fa-2x" v-if="!showNav" />        
+      <font-awesome-icon id="fa-times" class="fa-2x" icon="fa-times" v-if="showNav"/>
     </a>
     <ul id="nav-ul" class="paragraph" v-if="showNav || !mobileView">
       <li class="nav-button" @click="hideNav">

@@ -47,7 +47,6 @@ export default {
   display: flex;
   flex-direction: column;
   row-gap: 3rem;
-
 }
 #about-header {
   width: 100%;
