@@ -29,7 +29,7 @@ export default {
 <style>
 #hero-wrapper {
   display: grid;
-  grid-template-rows: 1fr 8.125rem;
+  grid-template-rows: 1fr 3rem;
   justify-content: center;
   height: calc(100svh - 4.75rem); /* Vertically centers content. 4.75rem is height of header*/
 }
