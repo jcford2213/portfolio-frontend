@@ -20,6 +20,7 @@ export default {
   <section id=hero-wrapper>
     <div>
       <h1 class="headline">Hi I'm Jackson,<br>Fullstack Web Developer</h1>
+      <img id="profile-headshot" src="project-images/ProfilePic.png" alt="Profile Headshot Image" width="250" height="250">
     </div>
     <span><font-awesome-icon id="fa-chevron" icon="fa-chevron-down" /></span>
   </section>    
@@ -37,10 +38,16 @@ export default {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 h1 {
   text-align: center;
   margin-bottom: 3.125rem;
+}
+#profile-headshot {
+  border: 0px solid;
+  border-radius: 50%;
+  box-shadow: 0px 0px 6px 4px #028090;
 }
 #hero-wrapper span {
   display: flex;
@@ -65,7 +72,7 @@ h1 {
     font-size: 2.25rem;
   }
   #fa-chevron {
-    font-size: 8rem;
+    font-size: 6rem;
   }
 }
 </style>
