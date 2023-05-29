@@ -79,7 +79,7 @@ export default {
 
 <template>
   <div id="contact-wrapper">
-    <form id="email-form" @submit.prevent="sendToServer(formValues)">
+    <form id="email-form" @submit.once.prevent="sendToServer(formValues)">
       <h1 class="headline">Want to get in touch?<br><br>Send me a message!</h1>
       <span class="input-control">
         <label class="paragraph" for="name">Name</label>
