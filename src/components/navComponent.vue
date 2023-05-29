@@ -59,13 +59,12 @@ export default {
 }
 #nav-ul {
   position: absolute;
-  top: 1rem;
+  top: -1rem;
   left: 50%;
   right: 50%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  row-gap: 1.5rem;
 }
 #nav-wrapper > a {
   justify-self: end;

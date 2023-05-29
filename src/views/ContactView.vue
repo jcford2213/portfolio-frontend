@@ -76,9 +76,8 @@ export default {
 
 <template>
   <div id="contact-wrapper">
-    
     <form id="email-form" @submit.prevent="sendToServer(formValues)">
-      <h1 class="headline"></h1>
+      <h1 class="headline">Want to get in touch?<br><br>Send me a message!</h1>
       <span class="input-control">
         <label class="paragraph" for="name">Name</label>
         <input type="text" name="name" id="name-input" v-model="formValues.name">
@@ -105,6 +104,7 @@ export default {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 2rem;
 }
 #email-form {
   display: flex;
@@ -113,7 +113,7 @@ export default {
   row-gap: 1.25rem;
   max-width: 700px;
   padding-inline: 0.5rem;
-  margin-block: 1rem;
+  margin-block: 3rem;
 }
 .input-control {
   display: flex;
@@ -148,7 +148,7 @@ export default {
 @media screen and (min-width: 800px) {
   #email-form {
     padding-inline: 0;
-    margin-block: 0;
+    margin-block: 5rem;
 
   }
 }

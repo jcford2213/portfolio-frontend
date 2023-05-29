@@ -20,12 +20,12 @@ export default {
     
     <section id="social-links">
       <ul>
-        <li class="link-wrapper">
+        <li class="logo-link-wrapper">
           <a href="https://github.com/jcford2213" target="_blank">
             <font-awesome-icon icon="fa-brands fa-github" class="fa-2x fa-icon-foreground" />
           </a>
         </li>
-        <li class="link-wrapper">
+        <li class="logo-link-wrapper">
           <a href="https://www.linkedin.com/in/jackson-crantford-364abb91/" target="_blank">
             <font-awesome-icon icon="fa-brands fa-linkedin" class="fa-2x fa-icon-foreground" />
           </a>
@@ -53,27 +53,25 @@ export default {
   justify-content: center;
   align-items: center;
   background-color: #028090;
-  row-gap: 1.25rem;
-  padding: 3.125rem 1rem 1rem 1rem;
+  /* row-gap: 1rem; */
+  padding: 1rem;
 }
-#social-links > ul {
+#social-links ul {
   display: flex;
   flex-direction: row;
   column-gap: 2rem;
 }
-#footer-wrapper > p {
+#footer-wrapper p {
+  padding-top: 1rem;
   font-size: 0.8rem;
 }
-.link-wrapper {
+.logo-link-wrapper {
   padding: 0.125rem;
 }
-#footer-nav > ul {
+#footer-nav ul {
   display: flex;
   flex-direction: row;
   column-gap: 1rem;
-}
-#footer-nav ul li {
-  padding: 0.125rem;
 }
 @media screen and (min-width: 800px) {
   a:hover {

@@ -5,6 +5,9 @@ export default {
       const chevron = document.getElementById('fa-chevron');
       chevron.style.animationPlayState = window.scrollY === 0 ? 'running' : 'paused';
       chevron.style.opacity = window.scrollY >= 100 ? '0' : '100';
+    },
+    scrollToAbout() {
+      document.getElementById('about-wrapper').scrollIntoView({ behavior: 'smooth' });
     }
   },
   mounted() {
@@ -22,7 +25,7 @@ export default {
       <h1 class="headline">Hi I'm Jackson,<br>Fullstack Web Developer</h1>
       <img id="profile-headshot" src="/project-images/ProfilePic.png" alt="Profile Headshot Image" width="250" height="250">
     </div>
-    <span><font-awesome-icon id="fa-chevron" icon="fa-chevron-down" /></span>
+    <span @click="scrollToAbout"><font-awesome-icon id="fa-chevron" icon="fa-chevron-down" /></span>
   </section>    
 </template>
 
