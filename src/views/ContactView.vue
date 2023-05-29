@@ -53,7 +53,7 @@ export default {
     async sendToServer (formInput = {}) {
       try {
         await this.validateInputs(formInput);
-        const server = 'http://localhost:3000';
+        const server = import.meta.env.VITE_EMAIL_SERVER;
         const response = await fetch(server, {
           method: 'POST',
           mode: 'cors',
@@ -63,11 +63,14 @@ export default {
           },
           body: JSON.stringify(formInput)
         })
+        if (response.status != 200) {
+          throw new Error('server responded with status other than 200');
+        }
         this.$router.push('/');
         window.alert('Thank you for reaching out! I will be sure to get back to you asap!');
       }
       catch(err) {
-        
+        console.log(err.message);
       };
     }
   }

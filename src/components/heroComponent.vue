@@ -22,7 +22,7 @@ export default {
 <template>
   <section id=hero-wrapper>
     <div>
-      <h1 class="headline">Hi I'm Jackson,<br>Fullstack Web Developer</h1>
+      <h1 class="headline">Hi I'm Jackson,<br>Frontend Web Developer</h1>
       <img id="profile-headshot" src="/project-images/ProfilePic.png" alt="Profile Headshot Image" width="250" height="250">
     </div>
     <span @click="scrollToAbout"><font-awesome-icon id="fa-chevron" icon="fa-chevron-down" /></span>
