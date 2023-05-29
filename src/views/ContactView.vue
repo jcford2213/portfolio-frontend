@@ -53,19 +53,18 @@ export default {
     async sendToServer (formInput = {}) {
       try {
         await this.validateInputs(formInput);
-        // const server = 'http://localhost:3000';
-        // const response = await fetch(server, {
-        //   method: 'POST',
-        //   mode: 'cors',
-        //   cache: 'no-cache',
-        //   headers: {
-        //     'Content-Type': 'application/json'
-        //   },
-        //   body: JSON.stringify(formInput)
-        // })
-        // this.$router.push('/');
-        // return response.data;
-        
+        const server = 'http://localhost:3000';
+        const response = await fetch(server, {
+          method: 'POST',
+          mode: 'cors',
+          cache: 'no-cache',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify(formInput)
+        })
+        this.$router.push('/');
+        window.alert('Thank you for reaching out! I will be sure to get back to you asap!');
       }
       catch(err) {
         
