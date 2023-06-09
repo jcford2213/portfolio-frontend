@@ -39,11 +39,28 @@ export default {
       <font-awesome-icon id="fa-times" class="fa-2x" icon="fa-times" v-if="showNav"/>
     </a>
     <ul id="nav-ul" class="paragraph" v-if="showNav || !mobileView">
-      <li class="nav-button" @click="hideNav">
-        <a href="/JacksonCrantford_Resume.pdf" target="_blank" ref="noopener noreferrer">Resume</a>
+      <li>
+        <a 
+          href="/JacksonCrantford_Resume.pdf"
+          target="_blank"
+          class="nav-button"
+          @click="hideNav"
+          ref="noopener noreferrer"
+        >Resume</a>
       </li>
-      <li class="nav-button" @click="hideNav">
-        <router-link to="/contact">Contact</router-link>
+      <li>
+        <router-link 
+          to="/projects"
+          class="nav-button"
+          @click="hideNav"
+        >Projects</router-link>
+      </li>
+      <li>
+        <router-link
+          to="/contact"
+          class="nav-button"
+          @click="hideNav"
+        >Contact</router-link>
       </li>
     </ul>
   </nav>
@@ -65,6 +82,8 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 1rem;
+  row-gap: 1rem;
 }
 #nav-wrapper > a {
   justify-self: end;

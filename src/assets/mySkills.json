@@ -2,67 +2,67 @@
   "skills": [
     {
       "name": "JavaScript",
-      "logo": "logos/javascript.svg",
+      "logo": "logos/tech-logos/javascript.svg",
       "altmessage": "JavaScript Logo",
       "type": "frontend"
     },
     {
       "name": "Vue.js",
-      "logo": "logos/vue.svg",
+      "logo": "logos/tech-logos/vue.svg",
       "altmessage": "Vue.js Logo",
       "type": "frontend"
     },
     {
       "name": "Node.js",
-      "logo": "logos/node.svg",
+      "logo": "logos/tech-logos/node.svg",
       "altmessage": "Node Logo",
       "type": "backend"
     },
     {
       "name": "Express.js",
-      "logo": "logos/express.svg",
+      "logo": "logos/tech-logos/express.svg",
       "altmessage": "Express. Logo",
       "type": "backend"
     },
     {
       "name": "HTML5",
-      "logo": "logos/html.svg",
+      "logo": "logos/tech-logos/html.svg",
       "altmessage": "HTML5 Logo",
       "type": "frontend"
     },
     {
       "name": "CSS3",
-      "logo": "logos/css.svg",
+      "logo": "logos/tech-logos/css.svg",
       "altmessage": "CSS3 Logo",
       "type": "frontend"
     },
     {
       "name": "Tailwind CSS",
-      "logo": "logos/tailwind.svg",
+      "logo": "logos/tech-logos/tailwind.svg",
       "altmessage": "Tailwind CSS Logo",
       "type": "frontend"
     },
     {
       "name": "MongoDB",
-      "logo": "logos/mongodb.svg",
+      "logo": "logos/tech-logos/mongodb.svg",
       "altmessage": "MongoDB Logo",
       "type": "backend"
     },
     {
       "name": "AWS",
-      "logo": "logos/aws.svg",
+      "logo": "logos/tech-logos/aws.svg",
       "altmessage": "AWS Logo",
       "type": "dev"
     },
     {
       "name": "Git",
-      "logo": "logos/git.svg",
+      "logo": "logos/tech-logos/git.svg",
       "altmessage": "Git Logo",
       "type": "dev"
     },
     {
       "name": "VS Code",
-      "logo": "logos/vs-code.svg",
+      "logo": "logos/tech-logos/vs-code.svg",
       "altmessage": "VS Code Logo",
       "type": "dev"
     }
