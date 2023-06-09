@@ -90,7 +90,7 @@ export default {
   max-width: 700px; 
   background-color: #404040;
 }
-li {
+.skill-section li {
   display: flex;
   flex-direction: row;
   justify-content: center;

@@ -19,9 +19,7 @@ export default {
           <p class="paragraph description">
             {{ project.description }}
           </p>
-          <button class="nav-button link-to-project">
-            <a v-bind:href="project.link" target="_blank">Visit Site ></a>
-          </button>
+          <a v-bind:href="project.link" target="_blank" class="nav-button link-to-project">Visit Site ></a>
         </figcaption>
       </figure>
     </section>
@@ -76,9 +74,7 @@ export default {
 .project-figure:hover .project-image {
   transform: scale(1.1);
 }
-.description-div {
-  
-}
+
 .link-to-project {
   max-width: 70%;
 }

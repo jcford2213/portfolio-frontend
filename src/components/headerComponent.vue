@@ -22,10 +22,10 @@ export default {
       So home page can relaod when user clicks logo
     Otherwise render <router-link> -->
     <a v-if="currentRoute === 'Home'" @click="logoLinkClicked = logoLinkClicked > 0 ? 0 : 1" id="header-logo" href="/">
-      <img src="/logos/JC-logo-colored.svg" alt="JC Logo" height="60" width="60">
+      <img src="/logos/my-logos/JC-logo-colored.svg" alt="JC Logo" height="60" width="60">
     </a>
     <router-link v-else @click="logoLinkClicked = logoLinkClicked > 0 ? 0 : 1" id="header-logo" to="/">
-      <img src="/logos/JC-logo-colored.svg" alt="JC Logo" height="60" width="60">
+      <img src="/logos/my-logos/JC-logo-colored.svg" alt="JC Logo" height="60" width="60">
     </router-link>
     <navComponent :logoLinkClicked="logoLinkClicked"/>
   </header>

@@ -43,7 +43,7 @@ export default {
   justify-content: center;
   align-items: center;
 }
-h1 {
+#hero-wrapper h1 {
   text-align: center;
   margin-bottom: 3.125rem;
 }

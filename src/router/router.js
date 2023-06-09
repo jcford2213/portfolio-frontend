@@ -12,6 +12,12 @@ const routes = [
     component: () =>  import('../views/ContactView.vue')
   },
   {
+    path:'/projects',
+    name: 'Projects',
+    component: () => import('../views/HomeView.vue')
+  },
+  // 404
+  {
     path: '/:pathMatch(.*)*',
     component: () =>  import('../views/404.vue')
   }
@@ -20,14 +26,19 @@ const routes = [
 const router = createRouter({
   history: createWebHistory(),
   routes,
-  scrollBehavior() {
-    return { x: 0, y: 0 };
-  },
-});
-
-router.beforeEach((to, from, next) => {
-  window.scrollTo(0, 0);
-  next();
+  scrollBehavior(to) {
+    if (to.name === 'Projects') {
+      return new Promise((resolve, reject) => {
+        setTimeout(() => {
+          resolve({
+            el: '#projects-wrapper',
+            behavior: 'smooth'
+          });  
+        }, 500)
+      })
+    }
+    return { left: 0, top: 0 };
+  }
 });
 
 export default router;
