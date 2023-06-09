@@ -26,15 +26,6 @@ export default {
     }
   },
   methods: {
-    // asyncTester () {
-    //   return new Promise((resolve, reject) => {
-    //     setTimeout(() => {
-    //       resolve();
-    //       // reject('Error thrown from reject');        
-    //     }, 3000)
-    //   })   
-    // },
-
     async sendToServer (formInput = {}) {
       this.buttonDisabled = true;
       try {
@@ -68,12 +59,14 @@ export default {
         popupButtonContainer.style.display = 'flex';
       }
       catch(err) {
-        popupText.innerText = err.message;
-        spinner.style.display = 'none';
-        faBan.style.display = 'block';
-        faBan.style.color = 'red';
-        popupButtonContainer.style.display = 'flex';
-        this.showTryAgainButton = true;
+        if (err.message) {
+          popupText.innerText = err.message;
+          spinner.style.display = 'none';
+          faBan.style.display = 'block';
+          faBan.style.color = 'red';
+          popupButtonContainer.style.display = 'flex';
+          this.showTryAgainButton = true;
+        }
       };
     },
         

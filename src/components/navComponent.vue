@@ -83,7 +83,7 @@ export default {
   flex-direction: column;
   align-items: center;
   margin-top: 1rem;
-  row-gap: 1rem;
+  row-gap: 1.5rem;
 }
 #nav-wrapper > a {
   justify-self: end;
