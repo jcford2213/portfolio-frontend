@@ -35,8 +35,7 @@ export default {
         var faEnvelope = document.getElementById('fa-envelope');
         var faBan = document.getElementById('fa-ban');
         var popupButtonContainer = document.getElementById('popup-button-container');
-      
-        await this.validateInputs(formInput);
+        // await this.validateInputs(formInput);
         popup.style.display = "block";
         const server = import.meta.env.VITE_EMAIL_SERVER;
         const response = await fetch(server, {
@@ -52,21 +51,19 @@ export default {
         if (response.status != 200) {
           throw new Error(serverResponse);
         }
-        popupText.innerText = `${serverResponse}`;
+       popupText.innerText = `${serverResponse}`;
         spinner.style.display = "none";
         faEnvelope.style.display = 'block';
         faEnvelope.style.color = '#1DB954';
         popupButtonContainer.style.display = 'flex';
       }
       catch(err) {
-        if (err.message) {
-          popupText.innerText = err.message;
-          spinner.style.display = 'none';
-          faBan.style.display = 'block';
-          faBan.style.color = 'red';
-          popupButtonContainer.style.display = 'flex';
-          this.showTryAgainButton = true;
-        }
+        popupText.innerText = err.message;
+        spinner.style.display = 'none';
+        faBan.style.display = 'block';
+        faBan.style.color = 'red';
+        popupButtonContainer.style.display = 'flex';
+        this.showTryAgainButton = true;
       };
     },
         
@@ -283,7 +280,7 @@ export default {
   bottom: 0;
   right: 0;
   flex-wrap: wrap;
-  width: 50%;
+  width: 100%;
 }
 .popup-button {
   width: 8.62rem;
@@ -304,7 +301,7 @@ export default {
   #popup-button-container {
     width: 25rem;
     column-gap: 1rem;
-    
+    width: 50%;
   }
 }
 </style>
