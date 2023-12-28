@@ -1,6 +1,12 @@
 {
   "projects": [
     {
+      "link": "https://jankos-little-zagreb-production.up.railway.app/",
+      "description": "Janko's Little Zaagreb Website and Wagtail Manager Portal",
+      "snapshot": "project-images/Jankos.jpg",
+      "mobileSnapshot": "project-snaps/Jankos.jpg"
+    },
+    {
       "link": "https://www.nasaastronomypictures.art",
       "description": "A Nasa APOD website build using Nasa's APOD OpenApi, Vue.js, and Node.js/Express.js.",
       "snapshot": "project-images/APOD-Project-Image.jpg",

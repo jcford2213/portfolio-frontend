@@ -11,7 +11,7 @@ export default {
 
 <template>
   <div id="projects-wrapper">
-    <h3 class="headline">An Example of My Work</h3>
+    <h3 class="headline">Examples of My Work</h3>
     <section v-for="project in projects">
       <figure class="project-figure">
         <img class="project-image" :src="project.snapshot" alt="Project Screenshot">      

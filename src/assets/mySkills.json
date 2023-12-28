@@ -25,13 +25,13 @@
       "type": "backend"
     },
     {
-      "name": "HTML5",
+      "name": "HTML 5",
       "logo": "logos/tech-logos/html.svg",
       "altmessage": "HTML5 Logo",
       "type": "frontend"
     },
     {
-      "name": "CSS3",
+      "name": "CSS 3",
       "logo": "logos/tech-logos/css.svg",
       "altmessage": "CSS3 Logo",
       "type": "frontend"
@@ -43,6 +43,18 @@
       "type": "frontend"
     },
     {
+      "name": "Django",
+      "logo": "logos/tech-logos/django.svg",
+      "altmessage": "Django Logo",
+      "type": "backend"
+    },
+    {
+      "name": "Wagtail",
+      "logo": "logos/tech-logos/wagtail.svg",
+      "altmessage": "Wagtail Logo",
+      "type": "backend"
+    },
+    {
       "name": "MongoDB",
       "logo": "logos/tech-logos/mongodb.svg",
       "altmessage": "MongoDB Logo",
@@ -52,6 +64,12 @@
       "name": "AWS",
       "logo": "logos/tech-logos/aws.svg",
       "altmessage": "AWS Logo",
+      "type": "dev"
+    },
+    {
+      "name": "Digital Ocean",
+      "logo": "logos/tech-logos/digital-ocean.svg",
+      "altmessage": "Digital Ocean Logo",
       "type": "dev"
     },
     {
