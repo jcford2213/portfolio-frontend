@@ -43,7 +43,7 @@ export default {
   position: relative;
   background-color: #000000;
   margin-inline: auto;
-  max-width: 800px;
+  max-width: 600px;
   overflow: hidden;
 }
 .project-image{
