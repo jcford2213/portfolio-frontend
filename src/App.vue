@@ -16,17 +16,16 @@ export default {
 </script>
 
 <template>
-  <div id="app-wrapper">
-    <headerComponent :current-route="currentRoute"/>
+  <headerComponent :current-route="currentRoute"/>
+  <main>
     <router-view />
-    <footerComponent :current-route="currentRoute"/>
-  </div>
+  </main>
+  <footerComponent :current-route="currentRoute"/>
 </template>
 
 <style>
 #app-wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  max-width: 1600px;
+  margin: 0 auto;
 }
 </style>

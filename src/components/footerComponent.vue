@@ -1,13 +1,26 @@
 <script>
+import { ref, onMounted } from 'vue'
+
 export default {
   props: {
     currentRoute: String
+  },
+  setup () {
+    const currentYear = ref(null)
+
+    onMounted( () => {
+      currentYear.value = new Date().getFullYear()
+    })
+
+    return {
+      currentYear,
+    }
   }
 }
 </script>
 
 <template>
-  <div id="footer-wrapper">
+  <footer>
     <!-- Render <a> if from page is '/' for UX page reload -->
     <a v-if="currentRoute === 'Home'" class="footer-nav-link" @click="logoLinkClicked = logoLinkClicked > 0 ? 0 : 1" id="footer-logo" href="/">
      <img src="/logos/my-logos/JC-logo-white.svg" alt="JC Logo" height="60" width="60">  
@@ -44,19 +57,19 @@ export default {
         </li>
     </ul>
     </nav>
-    <p class="paragraph">Designed and built by me. &copy 2023.</p>
-  </div>
+    <p class="paragraph">Designed and built by me. &copy {{ currentYear }}.</p>
+  </footer>
 </template>
 
 <style>
-#footer-wrapper {
+footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: #028090;
   row-gap: 1rem;
-  padding: 1rem;
+  padding: 1rem 0;
 }
 #social-links ul {
   display: flex;

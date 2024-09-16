@@ -14,4 +14,4 @@ const app = createApp(App)
 .component('font-awesome-icon', FontAwesomeIcon)
 .component('font-awesome-layers', FontAwesomeLayers)
 .use(router)
-.mount('#app');
+.mount('#app-body');

@@ -185,6 +185,7 @@ export default {
   justify-content: center;
   align-items: center;
   margin-block: 5rem;
+  margin-inline: 10%;
 }
 #email-form {
   display: flex;
@@ -192,7 +193,6 @@ export default {
   width: 100%;
   row-gap: 1rem;
   max-width: 700px;
-  padding-inline: 0.5rem;
   margin-block: 1rem;
 }
 .input-grouping-container {
@@ -223,10 +223,7 @@ export default {
   margin-bottom: 1rem;
 }
 #form-submit-button {
-  text-align: center;
-  align-self: center;
-  width: 100%;
-  padding-inline: 0;
+  width: fit-content;
 }
 
 /* Send Confirmation Popup */

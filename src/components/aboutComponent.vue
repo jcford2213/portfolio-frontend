@@ -49,7 +49,7 @@ export default {
   row-gap: 3rem;
 }
 #about-header {
-  width: 100%;
+  z-index: -1;
   display: flex;
   flex-direction: column;
   align-items: center;

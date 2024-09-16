@@ -29,15 +29,21 @@ button {
 }
 
 /* APP STYLES */
-#app-body {
+html, body {
+  margin: 0;
+  padding: 0;
+  min-height: 100svh;
+  min-width: 100svw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+body {
   background-color: #262626;
   color: #ffffff;
-  min-height: 100svh;
-  min-width: 310px;
-  /* min-height: 100vh; */
 }
-#app-wrapper {
-  min-height: 100svh;
+main {
+  flex: 1;
 }
 
 /* Text Styles */
@@ -52,6 +58,13 @@ button {
 .nav-button {
   font-family: 'Roboto', sans-serif;
   border: 0.2rem solid #028090;
+  border-radius: 0.375rem;
+  padding: 0.4rem 0.7rem;
+  transition: all 0.2s ease;
+}
+.nav-button-white {
+  font-family: 'Roboto', sans-serif;
+  border: 0.2rem solid #fff;
   border-radius: 0.375rem;
   padding: 0.4rem 0.7rem;
   transition: all 0.2s ease;
