@@ -6,11 +6,11 @@ const routes = [
     name: 'Home',
     component: () => import('../views/HomeView.vue')
   },
-  {
-    path: '/contact',
-    name: 'Contact',
-    component: () =>  import('../views/ContactView.vue')
-  },
+  // {
+  //   path: '/contact',
+  //   name: 'Contact',
+  //   component: () =>  import('../views/ContactView.vue')
+  // },
   {
     path:'/projects',
     name: 'Projects',
