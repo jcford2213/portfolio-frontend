@@ -11,11 +11,11 @@ export default {
   <div id="about-wrapper">
     <section id="about-header">
       <p class="paragraph">
-        I've been a web developer for nearly 2 years. I have a passion for creating and problem solving. I enjoy putting those passions to work building responsive web applications.
+        I have a passion for creating and problem solving. I enjoy putting those passions to work building responsive web applications.
       </p>
       <ul class="paragraph">
         <li class="link-wrapper">
-          <a href="https://github.com/jcford2213" target="_blank" class="social-button">
+          <a href="https://github.com/jcford2213" aria-label="Navigate to my GitHub" target="_blank" class="social-button">
             <font-awesome-layers class="fa-2x">
               <font-awesome-icon icon="fa-circle" class="fa-stack-1x fa-icon-background" />
               <font-awesome-icon icon="fa-brands fa-github" class="fa-stack-1x fa-icon-foreground" />
@@ -25,7 +25,7 @@ export default {
           
         </li>
         <li class="link-wrapper">
-          <a href="https://www.linkedin.com/in/jackson-crantford-364abb91/" target="_blank" class="social-button">
+          <a href="https://www.linkedin.com/in/jackson-crantford-364abb91/" aria-label="Navigate to my LinkedIn Profile" target="_blank" class="social-button">
             <font-awesome-layers class="fa-2x">
               <font-awesome-icon icon="fa-square" class="fa-stack-1x fa-icon-background" />
               <font-awesome-icon icon="fa-brands fa-linkedin" class="fa-stack-1x fa-icon-foreground" />
@@ -49,7 +49,6 @@ export default {
   row-gap: 3rem;
 }
 #about-header {
-  z-index: -1;
   display: flex;
   flex-direction: column;
   align-items: center;
