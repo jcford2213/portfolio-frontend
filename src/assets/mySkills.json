@@ -1,6 +1,24 @@
 {
   "skills": [
     {
+      "name": "WordPress",
+      "logo": "logos/tech-logos/wordpress.svg",
+      "altmessage": "WordPress Logo",
+      "type": "frontend"
+    },
+    {
+      "name": "PHP",
+      "logo": "logos/tech-logos/php.svg",
+      "altmessage": "PHP Logo",
+      "type": "backend"
+    },
+     {
+      "name": "WordPress",
+      "logo": "logos/tech-logos/wordpress.svg",
+      "altmessage": "WordPress Logo",
+      "type": "backend"
+    },
+    {
       "name": "JavaScript",
       "logo": "logos/tech-logos/javascript.svg",
       "altmessage": "JavaScript Logo",
@@ -43,6 +61,12 @@
       "type": "frontend"
     },
     {
+      "name": "jQuery",
+      "logo": "logos/tech-logos/jquery.svg",
+      "altmessage": "jQuery Logo",
+      "type": "frontend"
+    },
+    {
       "name": "Django",
       "logo": "logos/tech-logos/django.svg",
       "altmessage": "Django Logo",
@@ -67,21 +91,27 @@
       "type": "dev"
     },
     {
-      "name": "Digital Ocean",
-      "logo": "logos/tech-logos/digital-ocean.svg",
-      "altmessage": "Digital Ocean Logo",
-      "type": "dev"
-    },
-    {
       "name": "Git",
       "logo": "logos/tech-logos/git.svg",
       "altmessage": "Git Logo",
       "type": "dev"
     },
     {
+      "name": "GitHub",
+      "logo": "logos/tech-logos/github.svg",
+      "altmessage": "GitHub Logo",
+      "type": "dev"
+    },
+    {
       "name": "VS Code",
       "logo": "logos/tech-logos/vs-code.svg",
       "altmessage": "VS Code Logo",
+      "type": "dev"
+    },
+    {
+      "name": "Docker",
+      "logo": "logos/tech-logos/docker.svg",
+      "altmessage": "Docker Logo",
       "type": "dev"
     }
   ]
