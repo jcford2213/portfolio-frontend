@@ -103,6 +103,12 @@
       "type": "dev"
     },
     {
+      "name": "Figma",
+      "logo": "logos/tech-logos/figma.svg",
+      "altmessage": "Figma Logo",
+      "type": "dev"
+    },
+    {
       "name": "VS Code",
       "logo": "logos/tech-logos/vs-code.svg",
       "altmessage": "VS Code Logo",
@@ -112,6 +118,12 @@
       "name": "Docker",
       "logo": "logos/tech-logos/docker.svg",
       "altmessage": "Docker Logo",
+      "type": "dev"
+    },
+    {
+      "name": "Photoshop",
+      "logo": "logos/tech-logos/photoshop.svg",
+      "altmessage": "Adobe Photoshop Logo",
       "type": "dev"
     }
   ]

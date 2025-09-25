@@ -55,7 +55,7 @@ export default {
       </section>
       <section class="skill-section">
         <h3 class="headline category-headline">
-          Dev Tools
+          Dev / Design Tools
         </h3>
         <ul>
           <li v-for="skill in devSkills">
