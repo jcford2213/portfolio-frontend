@@ -54,9 +54,6 @@ export default {
         <li>
           <router-link to="/projects" aria-label="Go to projects" class="nav-button" @click="hideNav">Projects</router-link>
         </li>
-        <li>
-          <router-link to="/contact" aria-label="Go to contact page" class="nav-button" @click="hideNav">Contact</router-link>
-        </li>
       </ul>
       <!-- Mobile -->
       <a href="javascript:void(0);" @click="toggleNav" v-if="mobileView">
@@ -79,9 +76,6 @@ export default {
         <ul id="mobile-nav-ul" class="paragraph">
           <li>
             <router-link to="/projects" aria-label="Go to projects" class="nav-button-white" @click="hideNav">Projects</router-link>
-          </li>
-          <li>
-            <router-link to="/contact" aria-label="Go to contact page" class="nav-button-white" @click="hideNav">Contact</router-link>
           </li>
         </ul>
       </div>

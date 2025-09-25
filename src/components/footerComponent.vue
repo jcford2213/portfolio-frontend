@@ -52,9 +52,6 @@ export default {
         <li>
           <router-link class="footer-nav-link" to="/projects" aria-label="Go to projects">Projects</router-link>
         </li>
-        <li>
-          <router-link class="footer-nav-link" to="/contact" aria-label="Go to contact page">Contact</router-link>
-        </li>
     </ul>
     </nav>
     <p class="paragraph">Designed and built by me. &copy {{ currentYear }}.</p>
