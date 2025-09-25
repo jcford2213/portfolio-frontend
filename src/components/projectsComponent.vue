@@ -19,7 +19,7 @@ export default {
           <p class="paragraph description">
             {{ project.description }}
           </p>
-          <a v-bind:href="project.link" target="_blank" class="nav-button link-to-project">Visit Site ></a>
+          <a v-bind:href="project.link" target="_blank" aria-label="Visit project website" class="nav-button link-to-project">Visit Site ></a>
         </figcaption>
       </figure>
     </section>

@@ -22,23 +22,23 @@ export default {
 <template>
   <footer>
     <!-- Render <a> if from page is '/' for UX page reload -->
-    <a v-if="currentRoute === 'Home'" class="footer-nav-link" @click="logoLinkClicked = logoLinkClicked > 0 ? 0 : 1" id="footer-logo" href="/">
+    <a v-if="currentRoute === 'Home'" class="footer-nav-link" @click="logoLinkClicked = logoLinkClicked > 0 ? 0 : 1" id="footer-logo" href="/" aria-label="Go to home page">
      <img src="/logos/my-logos/JC-logo-white.svg" alt="JC Logo" height="60" width="60">  
     </a>
     <!-- Render <router-link> if from page is not '/' -->
-    <router-link v-else class="footer-nav-link" @click="logoLinkClicked = logoLinkClicked > 0 ? 0 : 1" id="footer-logo" to="/">
+    <router-link v-else class="footer-nav-link" @click="logoLinkClicked = logoLinkClicked > 0 ? 0 : 1" id="footer-logo" to="/" aria-label="Go to home page">
      <img src="/logos/my-logos/JC-logo-white.svg" alt="JC Logo" height="60" width="60">  
     </router-link>
     
     <section id="social-links">
       <ul>
         <li class="logo-link-wrapper">
-          <a class="footer-nav-link" href="https://github.com/jcford2213" target="_blank">
+          <a class="footer-nav-link" href="https://github.com/jcford2213" target="_blank" aria-label="Go to GitHub profile">
             <font-awesome-icon icon="fa-brands fa-github" class="fa-2x fa-icon-foreground" />
           </a>
         </li>
         <li class="logo-link-wrapper">
-          <a class="footer-nav-link" href="https://www.linkedin.com/in/jackson-crantford-364abb91/" target="_blank">
+          <a class="footer-nav-link" href="https://www.linkedin.com/in/jackson-crantford-364abb91/" target="_blank" aria-label="Go to LinkedIn profile">
             <font-awesome-icon icon="fa-brands fa-linkedin" class="fa-2x fa-icon-foreground" />
           </a>
         </li>
@@ -47,13 +47,13 @@ export default {
     <nav id="footer-nav">
       <ul class="paragraph">
         <li>
-          <a class="footer-nav-link" href="/JacksonCrantford_Resume.pdf" target="_blank" ref="noopener noreferrer">Resume</a>
+          <a class="footer-nav-link" href="/JacksonCrantford_Resume.pdf" target="_blank" ref="noopener noreferrer" aria-label="View Resume in a new window">Resume</a>
         </li>
         <li>
-          <router-link class="footer-nav-link" to="/projects">Projects</router-link>
+          <router-link class="footer-nav-link" to="/projects" aria-label="Go to projects">Projects</router-link>
         </li>
         <li>
-          <router-link class="footer-nav-link" to="/contact">Contact</router-link>
+          <router-link class="footer-nav-link" to="/contact" aria-label="Go to contact page">Contact</router-link>
         </li>
     </ul>
     </nav>

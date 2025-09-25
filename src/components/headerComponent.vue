@@ -42,20 +42,20 @@ export default {
     <!-- Render <a> if currentRoute is Home page
       So home page can relaod when user clicks logo
     Otherwise render <router-link> -->
-    <a v-if="currentRoute === 'Home'" @click="logoLinkClicked = logoLinkClicked > 0 ? 0 : 1" id="header-logo" href="/">
+    <a v-if="currentRoute === 'Home'" @click="logoLinkClicked = logoLinkClicked > 0 ? 0 : 1" id="header-logo" href="/" aria-label="Go to home page">
       <img src="/logos/my-logos/JC-logo-colored.svg" alt="JC Logo" height="60" width="60">
     </a>
-    <router-link v-else @click="logoLinkClicked = logoLinkClicked > 0 ? 0 : 1" id="header-logo" to="/">
+    <router-link v-else @click="logoLinkClicked = logoLinkClicked > 0 ? 0 : 1" id="header-logo" to="/" aria-label="Go to home page">
       <img src="/logos/my-logos/JC-logo-colored.svg" alt="JC Logo" height="60" width="60">
     </router-link>
     <nav id="nav-wrapper">
       <!-- Desktop -->
       <ul id="nav-ul" class="paragraph" v-if="!mobileView">
         <li>
-          <router-link to="/projects" class="nav-button" @click="hideNav">Projects</router-link>
+          <router-link to="/projects" aria-label="Go to projects" class="nav-button" @click="hideNav">Projects</router-link>
         </li>
         <li>
-          <router-link to="/contact" class="nav-button" @click="hideNav">Contact</router-link>
+          <router-link to="/contact" aria-label="Go to contact page" class="nav-button" @click="hideNav">Contact</router-link>
         </li>
       </ul>
       <!-- Mobile -->
@@ -65,11 +65,11 @@ export default {
       <!-- Slide-out navigation for mobile -->
       <div id="mobile-nav" :class="{ open: showNav }" @click="hideNav" v-if="mobileView">
         <div id="mobile-nav-top">
-          <a v-if="currentRoute === 'Home'" @click="logoLinkClicked = logoLinkClicked > 0 ? 0 : 1" id="mobile-header-logo" href="/">
+          <a v-if="currentRoute === 'Home'" @click="logoLinkClicked = logoLinkClicked > 0 ? 0 : 1" id="mobile-header-logo" href="/" aria-label="Go to home page">
             <img src="/logos/my-logos/JC-logo-white.svg" alt="JC Logo" height="60" width="60">  
           </a>
           <!-- Render <router-link> if from page is not '/' -->
-          <router-link v-else @click="logoLinkClicked = logoLinkClicked > 0 ? 0 : 1" id="mobile-header-logo" to="/">
+          <router-link v-else @click="logoLinkClicked = logoLinkClicked > 0 ? 0 : 1" id="mobile-header-logo" to="/" aria-label="Go to home page">
             <img src="/logos/my-logos/JC-logo-white.svg" alt="JC Logo" height="60" width="60">  
           </router-link>
           <a href="javascript:void(0);" @click="toggleNav">       
@@ -78,10 +78,10 @@ export default {
         </div>
         <ul id="mobile-nav-ul" class="paragraph">
           <li>
-            <router-link to="/projects" class="nav-button-white" @click="hideNav">Projects</router-link>
+            <router-link to="/projects" aria-label="Go to projects" class="nav-button-white" @click="hideNav">Projects</router-link>
           </li>
           <li>
-            <router-link to="/contact" class="nav-button-white" @click="hideNav">Contact</router-link>
+            <router-link to="/contact" aria-label="Go to contact page" class="nav-button-white" @click="hideNav">Contact</router-link>
           </li>
         </ul>
       </div>
